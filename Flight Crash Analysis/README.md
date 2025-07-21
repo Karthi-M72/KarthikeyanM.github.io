@@ -1,17 +1,17 @@
-# ✈️ Flight Accident Analysis – A Data-Driven Story Using Power BI
+# Flight Accident Analysis – A Data-Driven Story Using Power BI
 
 **Dataset Credit**: Flight accident data sourced from Kaggle  
-🔗 [Kaggle Dataset Link](https://www.kaggle.com/datasets/gyDtJNf8)
+  [Kaggle Dataset Link](https://www.kaggle.com/datasets/gyDtJNf8)
 
 ---
 
-## 📊 Objective
+## Objective
 
 To understand how real-world aviation crash data can reveal patterns that help improve flight safety. This project explores, cleans, and visualizes historical flight accident records using **Power BI**.
 
 ---
 
-## 🔍 Key Insights from the Dashboard
+## Key Insights from the Dashboard
 
 - Over **65%** of aircraft involved in accidents had an average lifespan of **20+ years** at the time of crash.
 - A small group of **operators accounted for a majority of total fatalities**.
@@ -19,7 +19,7 @@ To understand how real-world aviation crash data can reveal patterns that help i
 
 ---
 
-## ✅ Recommended Actions
+## Recommended Actions
 
 - Prioritize **audits and upgrades** for high-risk aircraft models.
 - Enforce stricter **safety compliance** for frequently involved operators.
@@ -27,7 +27,7 @@ To understand how real-world aviation crash data can reveal patterns that help i
 
 ---
 
-## 🧪 What I Worked On
+## What I Worked On
 
 - Started with raw, messy flight accident data from **Kaggle**
 - Cleaned inconsistent entries like `"1+2"` by parsing and converting them into numeric values
@@ -38,7 +38,7 @@ To understand how real-world aviation crash data can reveal patterns that help i
 
 ---
 
-## 🛠️ Dashboard Features (Power BI)
+## Dashboard Features (Power BI)
 
 - Slicers for **year**, **aircraft type**, **operator**, and **region**
 - Interactive **charts, maps**, and **tables**
@@ -50,7 +50,7 @@ To understand how real-world aviation crash data can reveal patterns that help i
 
 ---
 
-## 💡 Impact
+## Impact
 
 This project strengthened my **data cleaning** and **data storytelling** skills. It reminded me that **clean data isn’t just about numbers**—it’s about lives, decisions, and the insights we extract to make better choices.
 
