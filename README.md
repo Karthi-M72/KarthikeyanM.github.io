@@ -8,7 +8,7 @@
 
 ## 🧠 Summary
 
-I’m a Data Scientist with hands-on experience in applying **Machine Learning, Statistical Analysis, and Data Visualization** to solve real-world business problems.  
+I’m a Aspiring Data Scientist with hands-on experience in applying **Machine Learning, Statistical Analysis, and Data Visualization** to solve real-world business problems.  
 I specialize in **Python, SQL, Statistic, Power BI, Tableau**, and have a strong foundation in **data preprocessing, model evaluation, and feature engineering**.
 
 ---
