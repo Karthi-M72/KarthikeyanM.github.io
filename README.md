@@ -32,7 +32,7 @@ I specialize in **Python, SQL, Statistic, Power BI, Tableau**, and have a strong
 
 ## 🏢 Internship
 
-**Data Science Consultant Intern — Rubixe (Dec 2024 – June 2025)**  
+**Data Science Consultant Intern — Rubixe (Nov 2024 – June 2025)**  
 - Built predictive models using classification & clustering techniques  
 - Cleaned and transformed 120K+ records with SQL & Python  
 - Created dashboards with Seaborn & Matplotlib for fast insights  
