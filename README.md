@@ -1,7 +1,7 @@
 # 👨‍💻 Karthikeyan M — Data Science Portfolio
 
 🎯 **Aspiring Data Scientist** | 📍 Chennai, India  
-📫 karthikeyanmanikumar722@gmail.com
+📫 karthikeyanmanikumar722@gmail.com                         
 🔗 [LinkedIn](https://www.linkedin.com/in/karthikeyan-manikumar/)
 
 ---
@@ -33,6 +33,7 @@ I specialize in **Python, SQL, Statistic, Power BI, Tableau**, and have a strong
 ## 🏢 Internship
 
 **Data Science Consultant Intern — Rubixe (Nov 2024 – June 2025)**  
+[📜 Internship Certificate](https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1754572132.pdf )
 - Built predictive models using classification & clustering techniques  
 - Cleaned and transformed 120K+ records with SQL & Python  
 - Created dashboards with Seaborn & Matplotlib for fast insights  
@@ -49,11 +50,12 @@ I specialize in **Python, SQL, Statistic, Power BI, Tableau**, and have a strong
 
 ---
 
-## 🧩 Extra-Curricular & Leadership
+## 🧩 Extra-Curricular & Leadership  
 
-- 🗣️ Presented a business prototype at **UNLOCK 2023** – greenlit by 3-member jury  
-- 🎓 Conducted 5+ technical & industry sessions via **Finance Club**  
-- 🎉 Coordinated **UDYAMEE**, a flagship event involving 200+ participants
+- 🗣️ Presented a business prototype at UNLOCK 2023 – greenlit by 3-member jury  
+- 🎓 Conducted 5+ technical & industry sessions via Finance Club  
+- 🎉 Coordinated UDYAMEE, a flagship event involving 200+ participants  
+- 🌍 Represented **MBA (FoM), SRM IST — Vadapalani Campus** at the **Executive Summit @ Dubai (Jan 2024)**, a conclave with directors of prominent business firms in Dubai  
 
 ---
 
