@@ -1,84 +1,80 @@
 # 📞 Customer Churn Prediction – Machine Learning Project
 
-**Dataset Credit:** Customer Churn Dataset (~4,617 rows × 21 columns, mix of categorical & numerical features)
+**Dataset Credit:** Customer Churn Dataset
+**Dataset Size:** \~4,617 rows × 21 columns (mix of categorical & numerical features)
 
 ---
 
 ## 🎯 Objective
 
-The goal of this project is to build a Machine Learning model that predicts the probability of a customer **churning (leaving the company)**.
+The aim of this project is to build a **Machine Learning model** that predicts the probability of a customer **churning (leaving the company)**.
 
-This addresses key business challenges:
+This helps businesses to:
 
-* Retain **at-risk customers** before they switch to competitors.
-* Reduce **revenue loss** caused by churn.
-* Personalize engagement to improve **customer satisfaction & loyalty**.
+* Retain at-risk customers before they switch to competitors.
+* Reduce revenue loss caused by churn.
+* Personalize engagement to improve customer satisfaction & loyalty.
+
+---
+
+## 🔑 Key Insights from the Analysis
+
+* Customers with **more than 3 customer service calls** showed significantly higher churn risk.
+* **Shorter tenure** (new customers) were more likely to churn compared to long-term subscribers.
+* **Contract type** (month-to-month vs annual) strongly influenced churn — short contracts had higher churn.
+* **Payment method** (electronic checks vs credit card/bank transfer) emerged as an important factor.
+
+---
+
+## ✅ Recommended Actions
+
+* **Customer Retention** – Detect at-risk customers early and offer targeted retention strategies.      
+* **Revenue Growth** – Minimize revenue leakage by reducing churn and retaining high-value customers.      
+* **Enhanced Customer Experience** – Provide proactive support to churn-prone customers.       
+* **Business Insights** – Share churn predictions with marketing & support teams for targeted campaigns.             
+* **AI-Powered Support** – Use chatbots to intervene in real time when churn signals appear.                 
+
+---
+
+## 🛠️ What I Worked On
+
+* Started with a structured telecom dataset (≈ **4,617 rows × 21 columns**).
+* Performed **data preprocessing**:
+
+  * Encoded categorical variables using **One-Hot Encoding**
+  * Scaled numerical features with **StandardScaler**
+  * Addressed class imbalance with **SMOTE**
+  * Train-test split for robust evaluation
+* Conducted **Exploratory Data Analysis (EDA)** to identify customer churn drivers.
+* Built and compared multiple ML models:
+
+  * Logistic Regression
+  * Decision Tree
+  * Random Forest
+  * Support Vector Machine 
+  * XGBoost 
+* Evaluated models with **Accuracy, Precision, Recall, and F1-score**.
 
 ---
 
 ## 📊 Model Performance
 
-* **Best Performing Model:** **XGBoost (XGBClassifier)**
-* **Accuracy Achieved:** \~97.54%
-* XGBoost outperformed other models such as Logistic Regression, Decision Tree, Random Forest, and SVM in both accuracy and recall.
+**Best Performing Model:** **XGBoost (XGBClassifier)**
+* **Accuracy (Test Set):** \~97.54%
+  
+**Other models for comparison:**
+
+* Random Forest: \~94%
+* SVM: \~92%
+* Logistic Regression: \~85–88%
+* Decision Tree: \~82%
+
+**XGBoost provided the most balanced and reliable performance for predicting churn.**
 
 ---
 
-## 🛠️ Project Workflow
+## 🌟 Impact
 
-### 🔹 Data Preprocessing
-
-* Cleaned missing values.
-* Encoded categorical variables using **One-Hot Encoding**.
-* Scaled numerical features for uniformity.
-* Balanced imbalanced churn classes.
-
-### 🔹 Model Training
-
-* Algorithms tested: Logistic Regression, Decision Tree, Random Forest, SVM, and XGBoost.
-* Hyperparameter tuning applied for performance optimization.
-
-### 🔹 Model Evaluation
-
-* Compared models using **Accuracy, Precision, Recall, and F1-Score**.
-* **XGBoost** achieved the **highest performance (97.5%)**.
-
----
-
-## 🌟 Real-World Applications
-
-1️⃣ **Customer Retention**
-
-* Detect at-risk customers early.
-* Provide loyalty rewards, discounts, or retention offers.
-
-2️⃣ **Revenue Growth**
-
-* Minimize revenue leakage by reducing churn.
-* Retain high-value customers through tailored engagement.
-
-3️⃣ **Enhanced Customer Experience**
-
-* Provide proactive support to churn-prone customers.
-* Offer personalized recommendations based on usage patterns.
-
-4️⃣ **Business Insights & Transparency**
-
-* Share churn predictions with marketing & support teams.
-* Use churn scores to run targeted campaigns.
-
-5️⃣ **AI-Powered Customer Support**
-
-* Deploy chatbots for real-time churn prevention.
-* Suggest retention offers at the moment of cancellation attempts.
-
----
-
-## 🚀 Impact
-
-This project demonstrates how ML can transform customer success strategies by:
-
-* Predicting churn with **97%+ accuracy**.
-* Supporting **data-driven retention campaigns**.
-* Increasing **customer lifetime value (CLV)**.
-* Strengthening **loyalty and brand trust**.
+* Strengthened my skills in **data preprocessing, feature engineering, and ML model building**.
+* Demonstrated how **machine learning can transform customer retention strategies** by predicting churn with high accuracy.
+* Showcased the importance of **data-driven insights** for designing personalized offers, reducing churn, and increasing customer lifetime value.
