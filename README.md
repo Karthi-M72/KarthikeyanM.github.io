@@ -15,11 +15,15 @@ I specialize in **Python, SQL, Statistic, Power BI, Tableau**, and have a strong
 
 ## 🛠️ Technical Skills
 
-- **Languages:** Python, SQL  
-- **Machine Learning:** Regression, Classification, Clustering, Ensemble Methods, SMOTE, GridSearchCV  
-- **Data Visualization:** Power BI, Tableau, Matplotlib, Seaborn  
-- **Tools & Others:** Git, GitHub, MS Office, Excel  
-
+- **Programming Languages:** Python, SQL
+- **Machine Learning:** Supervised Learning (Linear Regression, Logistic Regression, Decision Trees), Unsupervised Learning (K-Means Clustering, Hierarchical Clustering), Dimensionality Reduction (PCA)
+- **Deep Learning:** Convolutional Neural Networks (CNNs)
+- **Statistics:** Descriptive Statistics, Inferential Statistics, Hypothesis Testing, Probability Theory
+- **Data Visualization:** Power BI, Tableau, Matplotlib, Seaborn
+- **Libraries & Frameworks:** Scikit-learn, TensorFlow, Keras, Pandas, NumPy
+- **Techniques:** Data Cleaning, Feature Engineering, Model Evaluation, Hyperparameter Tuning, Imbalanced Data Handling
+- **Tools & Others:** Git, GitHub, MS Office, Excel
+  
 ---
 
 ## 🎓 Education
