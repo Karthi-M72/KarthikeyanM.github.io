@@ -1,0 +1,24 @@
+# Upgrade pip first
+pip==25.2
+
+# Streamlit for the web app
+streamlit==1.50.0
+
+# Core data science libraries
+numpy==2.3.3
+pandas==2.3.2
+scikit-learn==1.3.0
+xgboost==1.7.6
+
+# Optional visualization libraries if your app uses them
+matplotlib==3.8.1
+seaborn==0.12.2
+altair==5.5.0
+
+# For model persistence
+joblib==1.3.2
+pickle5==0.0.12
+
+# Utilities
+python-dateutil==2.9.0.post0
+pytz==2025.2
