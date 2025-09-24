@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 import os
 
 # ===========================
@@ -15,21 +15,23 @@ STYLE_PATH = os.path.join(BASE_DIR, "style.css")
 # Load model + preprocessor
 # ===========================
 try:
-    model = joblib.load(MODEL_PATH)
+    with open(MODEL_PATH, "rb") as f:
+        model = pickle.load(f)
 except FileNotFoundError:
-    st.error(f"❌ Model file not found at {MODEL_PATH}")
+    st.error(f"Model file not found at {MODEL_PATH}")
     st.stop()
 except Exception as e:
-    st.error(f"❌ Error loading model: {e}")
+    st.error(f"Error loading model: {e}")
     st.stop()
 
 try:
-    preprocessor = joblib.load(PREPROCESSOR_PATH)
+    with open(PREPROCESSOR_PATH, "rb") as f:
+        preprocessor = pickle.load(f)
 except FileNotFoundError:
-    st.error(f"❌ Preprocessor file not found at {PREPROCESSOR_PATH}")
+    st.error(f"Preprocessor file not found at {PREPROCESSOR_PATH}")
     st.stop()
 except Exception as e:
-    st.error(f"❌ Error loading preprocessor: {e}")
+    st.error(f"Error loading preprocessor: {e}")
     st.stop()
 
 # ===========================
@@ -39,7 +41,7 @@ if os.path.exists(STYLE_PATH):
     with open(STYLE_PATH) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 else:
-    st.warning(f"⚠️ CSS file not found at {STYLE_PATH}. Using default styling.")
+    st.warning(f"CSS file not found at {STYLE_PATH}. Using default styling.")
 
 # ===========================
 # Page Config
@@ -47,13 +49,12 @@ else:
 st.set_page_config(
     page_title="Customer Churn Prediction",
     layout="centered",
-    page_icon="📊",
 )
 
 # ===========================
 # App Header
 # ===========================
-st.markdown("<h1 class='title'>📊 Customer Churn Prediction</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>Customer Churn Prediction</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Enter customer details to predict churn likelihood</p>", unsafe_allow_html=True)
 
 # ===========================
@@ -76,7 +77,7 @@ with st.form("churn_form"):
         monthly_charges = st.number_input("Monthly Charges", min_value=0.0, step=0.1)
         total_charges = st.number_input("Total Charges", min_value=0.0, step=0.1)
 
-    submitted = st.form_submit_button("🚀 Predict")
+    submitted = st.form_submit_button("Predict")
 
 # ===========================
 # Prediction
@@ -98,8 +99,8 @@ if submitted:
         prob = model.predict_proba(processed)[0][1]
 
         if prediction == 1:
-            st.markdown(f"<div class='card red'>⚠️ Likely to Churn<br><span class='prob'>Probability: {prob:.2%}</span></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='card red'>Likely to Churn<br><span class='prob'>Probability: {prob:.2%}</span></div>", unsafe_allow_html=True)
         else:
-            st.markdown(f"<div class='card green'>✅ Not Likely to Churn<br><span class='prob'>Probability: {prob:.2%}</span></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='card green'>Not Likely to Churn<br><span class='prob'>Probability: {prob:.2%}</span></div>", unsafe_allow_html=True)
     except Exception as e:
-        st.error(f"❌ Error during prediction: {e}")
+        st.error(f"Error during prediction: {e}")
