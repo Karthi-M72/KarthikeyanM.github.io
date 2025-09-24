@@ -1,6 +1,6 @@
 import streamlit as st
-import pickle
 import pandas as pd
+import joblib
 import os
 
 # ===========================
@@ -15,17 +15,21 @@ STYLE_PATH = os.path.join(BASE_DIR, "style.css")
 # Load model + preprocessor
 # ===========================
 try:
-    with open(MODEL_PATH, "rb") as f:
-        model = pickle.load(f)
+    model = joblib.load(MODEL_PATH)
 except FileNotFoundError:
     st.error(f"❌ Model file not found at {MODEL_PATH}")
     st.stop()
+except Exception as e:
+    st.error(f"❌ Error loading model: {e}")
+    st.stop()
 
 try:
-    with open(PREPROCESSOR_PATH, "rb") as f:
-        preprocessor = pickle.load(f)
+    preprocessor = joblib.load(PREPROCESSOR_PATH)
 except FileNotFoundError:
     st.error(f"❌ Preprocessor file not found at {PREPROCESSOR_PATH}")
+    st.stop()
+except Exception as e:
+    st.error(f"❌ Error loading preprocessor: {e}")
     st.stop()
 
 # ===========================
